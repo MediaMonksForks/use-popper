@@ -13,12 +13,6 @@
     "type": "git",
     "url": "https://github.com/MediaMonksForks/use-popper"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-typescript",
-      "@babel/preset-react"
-    ]
-  },
   "@pika/pack": {
     "pipeline": [
       [
@@ -51,6 +45,7 @@
     "@pika/plugin-build-web": "0.7.1",
     "@pika/plugin-standard-pkg": "0.7.1",
     "@types/react": "16.9.11",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "typescript": "3.7.2"
