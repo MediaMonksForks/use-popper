@@ -11,9 +11,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install -g @pika/pack
       - run: npm ci
-      - run: npm run build
+      - run: npm run tsc
 
   publish-npm:
     needs: build
@@ -25,6 +24,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm rum build
       - run: npm publish ./pkg
         env:
           NODE_AUTH_TOKEN: ${{secrets.npmToken}}
