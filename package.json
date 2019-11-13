@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "tsc": "tsc --noEmit",
-    "build": "pika-pack build"
+    "build": "pika-pack"
   },
   "publishConfig": {
     "access": "public"
