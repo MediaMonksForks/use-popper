@@ -1,6 +1,6 @@
 {
   "name": "@mediamonks/use-popper",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "license": "MIT",
   "scripts": {
     "tsc": "tsc --noEmit",
@@ -22,9 +22,10 @@
         "@pika/plugin-build-node"
       ],
       [
-        "@pika/plugin-build-umd", {
-		"entrypoint": "module"
-	  }
+        "@pika/plugin-build-umd",
+        {
+          "entrypoint": "module"
+        }
       ],
       [
         "@pika/plugin-build-types"
